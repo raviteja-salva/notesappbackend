@@ -1,0 +1,36 @@
+POST http://localhost:3000/register/
+Content-Type: application/json
+
+{
+  "user_id": "john123",
+  "username": "john",
+  "password": "password123",
+  "name": "John Doe",
+  "gender": "male"
+}
+
+###
+
+POST http://localhost:3000/login/
+Content-Type : application/json
+
+{
+  "username": "john",
+  "password": "password123"
+}
+
+###
+
+POST http://localhost:3000/user/notes/
+authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiam9objEyMyIsInVzZXJuYW1lIjoiam9obiIsInBhc3N3b3JkIjoiJDJiJDEwJHVJd3pGVGFYTWgvMHRocGVYeW9yZy5tYzkyc2xBWTAuLkJHTkVOUUk4cTloeU5iU1hHSmQ2IiwibmFtZSI6IkpvaG4gRG9lIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTcyMTMwNjExOX0.fbKOoLXrujA6zK-p3DIow4Lv08PlM_tahu1IFshjZHk
+
+{
+   "title": "The Mornings...",
+   "description": "I am Raviteja"
+}
+
+DELETE http://localhost:3000/notes/
+authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiamhzaHNnYWRrampzIiwidXNlcm5hbWUiOiJyYXZpdGVqYTEyMyIsInBhc3N3b3JkIjoiJDJiJDEwJGZsaUlldUNLZE9aWVJyQkN3TDZWTmVESTlPQTl4QTgwZHhLbkoyWFYyTUFuWWZBcXN1MUtxIiwibmFtZSI6IkFkYW0gUmljaGFyZCIsImdlbmRlciI6Im1hbGUiLCJpYXQiOjE3MjEzMDM2MjJ9.1rRHvfmO9oIW66LL8F40ii2t47qDERsPS8bE_As2Q2k
+
+GET http://localhost:3000/user/notes/
+authorization : Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiam9objEyMyIsInVzZXJuYW1lIjoiam9obiIsInBhc3N3b3JkIjoiJDJiJDEwJHVJd3pGVGFYTWgvMHRocGVYeW9yZy5tYzkyc2xBWTAuLkJHTkVOUUk4cTloeU5iU1hHSmQ2IiwibmFtZSI6IkpvaG4gRG9lIiwiZ2VuZGVyIjoibWFsZSIsImlhdCI6MTcyMTMwNjExOX0.fbKOoLXrujA6zK-p3DIow4Lv08PlM_tahu1IFshjZHk
